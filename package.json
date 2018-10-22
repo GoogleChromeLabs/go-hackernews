@@ -4,8 +4,7 @@
 	"version": "0.0.0",
 	"license": "MIT",
 	"scripts": {
-		"build": "gopherjs build --output build/script.min.js --minify && npm run compress && npm run sw",
-		"compress": "npx google-closure-compiler --js=build/script.min.js --js_output_file=script-min.js",
+		"build": "gopherjs build --output build/script.min.js --minify && npm run sw",
 		"sw": "workbox generateSW workbox-config.js"
 	},
 	"devDependencies": {
