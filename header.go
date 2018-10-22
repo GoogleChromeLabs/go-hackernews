@@ -75,7 +75,7 @@ func (f HeaderDef) renderNav() *react.NavElem {
 			links...,
 		),
 		react.A(
-			&react.AProps{Href: "https://github.com/housseindjirdeh/go-hn", ClassName: "github"},
+			&react.AProps{Href: "https://github.com/GoogleChromeLabs/go-hackernews", ClassName: "github"},
 			react.S("Built with GopherJS"),
 		),
 	)
