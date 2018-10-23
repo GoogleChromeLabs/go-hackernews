@@ -26,7 +26,6 @@ A Hacker News client (yes, another one) written in [Go](https://golang.org/) usi
 
 * Service Worker added with [Workbox](https://developers.google.com/web/tools/workbox/)
 * Hosting on [Firebase](https://www.google.ca/search?q=firebase+hosting&oq=firebase+hosting&aqs=chrome.0.0j69i60l2j69i61j0l2.1327j0j4&sourceid=chrome&ie=UTF-8)
-* Final code compiled with [Closure Compiler](https://developers.google.com/closure/compiler/)
 
 ## Setup
 
