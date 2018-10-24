@@ -19,7 +19,8 @@ A Hacker News client (yes, another one) written in [Go](https://golang.org/) usi
 ## What is this built with?
 
 * [GopherJS](https://github.com/gopherjs/gopherjs) to compile Go to JavaScript
-* [myitcv.io/react](https://github.com/myitcv/react) for React bindings
+* [myitcv.io/react](https://github.com/myitcv/x/tree/master/react) for React bindings
+  * [JSX](https://godoc.org/myitcv.io/react/jsx) is supported, but this app does not have any :)
 * [Humble/Router](https://github.com/go-humble/router) for routing
 
 ### Additional 
