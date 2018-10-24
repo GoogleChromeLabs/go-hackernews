@@ -83,7 +83,7 @@ func (f StoryDef) Render() react.Element {
 
 	domainStr := ""
 	if props.Domain != "" {
-		domainStr = "        (" + props.Domain + ")"
+		domainStr = "(" + props.Domain + ")"
 	}
 
 	return react.Div(nil,
@@ -103,12 +103,12 @@ func (f StoryDef) Render() react.Element {
 					),
 					react.P(
 						&react.PProps{ClassName: "meta"},
-						react.S("						"+strconv.Itoa(props.Points)+" points						| by  "),
+						react.S(strconv.Itoa(props.Points)+" points | by "),
 						react.A(
 							&react.AProps{Href: "#/user/" + props.User},
 							react.S(props.User),
 						),
-						react.S(" 						"+props.TimeAgo+"					"),
+						react.S(" "+props.TimeAgo),
 					),
 				),
 				react.Div(&react.DivProps{ClassName: "item-view-comments"},
