@@ -45,25 +45,19 @@ go get -u honnef.co/go/js/xhr github.com/go-humble/router
 export PATH="$(dirname $(go list -f '{{.Target}}' myitcv.io/react/cmd/reactGen)):$PATH"
 ```
 
-4. Install dependencies (for the service worker):
-
-```bash
-npm install
-```
-
-5. Create generated files for each component:
+4. Create generated files for each component:
 
 ```bash
 go generate
 ```
 
-6. Build the application:
+5. Build the application:
 
 ```bash
-npm run build
+gopherjs build --output build/script.min.js --minify
 ```
 
-This will save create `script.min.js` and `service-worker.js` in the `build/` folder. You can use any local testing server in `build/` to boot up the application (for example: `python -m SimpleHTTPServer` if you have Python installed).
+This will save create `script.min.js` in the `build/` folder. You can use any local testing server in `build/` to boot up the application (for example: `python -m SimpleHTTPServer` if you have Python installed).
 
 ## Can I contribute?
 
